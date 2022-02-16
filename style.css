@@ -33,7 +33,7 @@ html, body {
     display: flex;
     align-items: center;
     flex-direction: column;
-    width: 490px;
+    width: 37.1212%;
     height: 100%;
     background-image: url(background.jpg);
     background-size:contain;
@@ -43,20 +43,20 @@ html, body {
 }
 
 .logoBar {
-    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 138px;
     width: 100%;
-    margin-top: 205px;
+    margin-top: min(25vh, 205px);
     background-color: rgba(0, 0, 0, .42);
 }
 
 .logo {
-    position: absolute;
-    top: 12px;
-    left: 27%;
     width: auto;
     display: flex;
     align-items: center;
+    padding: 2px 2px 0 0;
 }
 
 .logoImg {

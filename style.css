@@ -102,13 +102,6 @@ html, body {
     width: 100%;
 }
 
-.shadow {
-    width: 100%;
-    position: relative;
-    z-index: 1;
-    box-shadow: 0 5px 5px var(--light-grey);
-}
-
 .submitContainer {
     width: 100%;
     flex: 1;

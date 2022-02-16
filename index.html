@@ -12,11 +12,18 @@
     <div class="content">
         <div class="logoContainer">
             <div class="logoBar">
-                <img src="odin.png" alt="Odin Logo" width="50px" 
-                style="background-color: black;">
-                <h1 class="logoText">ODIN</h1>
+                <div class="logo">
+                    <img src="odin.png" alt="Odin Logo" class="logoImg">
+                    <h1 class="logoText">ODIN</h1>
+                </div>
             </div>
-            <p class="logoFooter">photo by <><><> on <><><></p>
+            <p class="logoFooter">
+                Photo by 
+                <a class="footerLink" 
+                href="https://unsplash.com/@haliewestphoto">Haily West</a>
+                 on 
+                 <a class="footerLink" href="http://unsplash.com">Unsplash</a>
+                </p>
         </div>
         <div class="formContainer">
             <div class="formHeader">
@@ -33,9 +40,36 @@
                     you want to.
                 </p>
             </div>
-            <form action="/index.html" method="post">
-                <div class="inputContainer"></div>
-                <div class="submitContainer"></div>
+            <form action="" method="post">
+                <div class="inputContainer">
+                        <h2 class="formTitle">Let's do this!</h2>
+
+                        <label for="fname">FIRST NAME</label>
+                        <input type="text" name="fname" id="fname">
+
+                        <label for="lname">LAST NAME</label>
+                        <input type="text" name="lname" id="lname">
+
+                        <label for="email">EMAIL</label>
+                        <input type="email" name="email" id="email">
+
+                        <label for="phone">PHONE NUMBER</label>
+                        <input type="tel" name="phone" id="phone">
+
+                        <label for="pword">PASSWORD</label>
+                        <input type="password" name="pword" id="pword">
+
+                        <label for="confirmPword">CONFIRM PASSWORD</label>
+                        <input type="password" name="confirmPword" 
+                        id="confirmPword">
+                </div>
+                <div class="submitContainer">
+                    <button type="submit">Create Account</button>
+                    <p>
+                        Already have an account? 
+                        <a href="">Log in</a>
+                    </p>
+                </div>
             </form>
         </div>
     </div>

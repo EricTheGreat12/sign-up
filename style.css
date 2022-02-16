@@ -1,13 +1,86 @@
+@font-face {
+    font-family: Norse-Bold;
+    src: url(Norse-Bold.otf);
+}
+
 :root {
+    --main-width: min(98vw, 1320px);
 
+    --green: #596D48;
+    --light-grey: #E5E7EB;
 }
 
-#pageContainer {
-
+html, body {
+    height: 100vh;
+    background-color: #212121;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
 }
 
-#logoContainer {
+.content {
+    height: 100%;
+    width: var(--main-width);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
 }
 
-#main {
+.logoContainer {
+    flex: none;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 490px;
+    height: 100%;
+    background-image: url(background.jpg);
+    background-size:contain;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.logoBar {
+    position: relative;
+    height: 138px;
+    width: 100%;
+    margin-top: 205px;
+    background-color: rgba(0, 0, 0, .42);
+}
+
+.logo {
+    position: absolute;
+    top: 12px;
+    left: 27%;
+    width: auto;
+    display: flex;
+    align-items: center;
+}
+
+.logoImg {
+    height: 117px;
+}
+
+.logoText {
+    font-family: Norse-Bold;
+    font-size: 88px;
+    font-weight: 100;
+    margin: 0;
+    padding-top: 1px;
+}
+
+.logoFooter {
+    margin: auto 0 12px 0;
+    font-size: 12px;
+}
+
+.footerLink {
+    color: white;
+}
+
+.formContainer {
+    
+    height: 100%;
 }

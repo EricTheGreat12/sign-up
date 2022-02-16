@@ -7,6 +7,7 @@
     --main-width: min(98vw, 1320px);
 
     --green: #596D48;
+    --off-white: #f9fafb;
     --light-grey: #E5E7EB;
 }
 
@@ -29,6 +30,8 @@ html, body {
 }
 
 .logoContainer {
+    position: relative;
+    z-index: 2;
     flex: none;
     display: flex;
     align-items: center;
@@ -81,6 +84,33 @@ html, body {
 }
 
 .formContainer {
-    
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 100%;
+}
+
+.formHeader {
+    width: 100%;
+    flex: 1;
+    background-color: var(--off-white);
+}
+
+.inputContainer {
+    width: 100%;
+}
+
+.shadow {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 5px 5px var(--light-grey);
+}
+
+.submitContainer {
+    width: 100%;
+    flex: 1;
+    background-color: var(--off-white);
 }

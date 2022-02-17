@@ -9,6 +9,7 @@
     --green: #596D48;
     --off-white: #f9fafb;
     --light-grey: #E5E7EB;
+    --med-grey: #dddedf;
 }
 
 html, body {
@@ -17,7 +18,10 @@ html, body {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, 
+        Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", 
+        "Segoe UI Symbol";
+
 }
 
 .content {
@@ -31,7 +35,7 @@ html, body {
 
 .logoContainer {
     position: relative;
-    z-index: 2;
+    z-index: 1;
     flex: none;
     display: flex;
     align-items: center;
@@ -71,7 +75,7 @@ html, body {
     font-size: 88px;
     font-weight: 100;
     margin: 0;
-    padding-top: 1px;
+    padding: 2px 2px 0 0;
 }
 
 .logoFooter {
@@ -84,7 +88,6 @@ html, body {
 }
 
 .formContainer {
-    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -94,12 +97,62 @@ html, body {
 
 .formHeader {
     width: 100%;
+    min-height: 340px;
     flex: 1;
+    display: flex;
+    align-items: flex-end;
     background-color: var(--off-white);
+}
+
+.formHeader p {
+    flex: 0 1 650px;
+    padding: 2.5rem;
+    margin: 16px 0;
+    font-size: 1.3rem;
+    font-weight: 600;
 }
 
 .inputContainer {
     width: 100%;
+    position: relative;
+    box-shadow: -3px 5px 5px var(--med-grey);
+}
+
+.inputContainer h2 {
+    padding: 0 0 0 2.5rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.inputFlex {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 0 2.5rem 1.5rem;
+}
+
+.inputFlex div {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.inputFlex > div > div:first-of-type {
+    margin: 0 4rem 0 0;
+}
+
+label {
+    position: absolute;
+    font-size: .7rem;
+    letter-spacing: .1rem;
+}
+
+input {
+    margin: 16px 0 24px;
+    padding: .25rem;
+    font-size: 1rem;
+    border-radius: .25rem;
+    box-shadow: none;
+    border: 1px solid black;
 }
 
 .submitContainer {

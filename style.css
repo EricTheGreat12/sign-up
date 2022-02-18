@@ -10,6 +10,7 @@
     --off-white: #f9fafb;
     --light-grey: #E5E7EB;
     --med-grey: #dddedf;
+    --blue: #5d8ed9;
 }
 
 html, body {
@@ -149,7 +150,13 @@ input {
     font-size: 1rem;
     border-radius: .25rem;
     box-shadow: none;
-    border: 1px solid black;
+    border: 1px solid var(--light-grey);
+}
+
+input:focus-visible {
+    outline: none;
+    border-color: var(--blue);
+    box-shadow: 3px 3px 3px var(--med-grey);
 }
 
 .submitContainer {
@@ -167,6 +174,7 @@ input {
     color: white;
     font-weight: 600;
     font-size: 1rem;
+    cursor: pointer;
 }
 
 .submitContainer p {
@@ -184,13 +192,31 @@ input {
         flex-direction: column;
     }
     .logoContainer {
-        max-height: 150px;
+        max-height: 250px;
         width: 100%;
     }
     .logoBar {
-        margin-top: 11px;
+        margin-top: 50px;
     }
     .logoFooter {
-        margin: 7px 0 0 0;
+        margin: 45px 0 0 0;
+    }
+}
+
+@media (max-width: 360px) {
+    .logoContainer {
+        max-height: 150px;
+    }
+    .logoBar {
+        margin-top: 10px;
+    }
+    .logoFooter {
+        margin: 5px 0 0 0;
+    }
+}
+
+@media (max-width: 316px) {
+    .formHeader {
+        min-height: 400px;
     }
 }

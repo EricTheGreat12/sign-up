@@ -160,7 +160,7 @@ input:focus-visible {
     box-shadow: 3px 3px 3px var(--med-grey);
 }
 
-input:user-invalid, .invalid {
+input:not(placeholder-shown):invalid, .invalid {
     border-color: var(--red);
 }
 

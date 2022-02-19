@@ -11,6 +11,7 @@
     --light-grey: #E5E7EB;
     --med-grey: #dddedf;
     --blue: #5d8ed9;
+    --red: #d15a5b;
 }
 
 html, body {
@@ -145,6 +146,7 @@ label {
 }
 
 input {
+    outline: none;
     margin: 16px 0 24px;
     padding: .25rem;
     font-size: 1rem;
@@ -154,9 +156,27 @@ input {
 }
 
 input:focus-visible {
-    outline: none;
     border-color: var(--blue);
     box-shadow: 3px 3px 3px var(--med-grey);
+}
+
+input:user-invalid, .invalid {
+    border-color: var(--red);
+}
+
+#pwordContainer {
+    position: relative;
+}
+
+#pwordMismatch {
+    position: absolute;
+    top: 36px;
+    color: var(--red);
+    font-size: .75rem;
+}
+
+.hidden {
+    visibility: hidden;
 }
 
 .submitContainer {
